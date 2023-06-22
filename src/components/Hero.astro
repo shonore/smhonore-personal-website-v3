@@ -1,5 +1,5 @@
 ---
-import heroImage from '@assets/images/hero2.svg';
+import heroImage from '@assets/images/hero2.png';
 import { Image } from '@astrojs/image/components';
 import Button from '@components/ui/Button.astro';
 ---
@@ -15,7 +15,10 @@ import Button from '@components/ui/Button.astro';
 			</h1>
 		</div>
 		<div class="mb-10">
+			<div class="flex">
 			<Button style={'primary'} size={'lg'} class={'flex'} name="learn more">Learn more</Button>
+			<Button style={'secondary'} size={'lg'} name="Contact" class={'flex'}>Say hello!</Button>
+			</div>
 		</div>
 	</div>
 	<div data-testid="hero-img" class="mb-10 flex w-1/2 items-center justify-center">
