@@ -9,8 +9,16 @@ const menuitems = [
 		path: '#about',
 	},
 	{
+		title: 'My Toolbox',
+		path: '#toolbox',
+	},
+	{
 		title: 'Projects',
 		path: '#projects',
+	},
+	{
+		title: 'Blog',
+		path: '#blog',
 	},
 	{
 		title: 'Contact',
@@ -22,7 +30,7 @@ const menuitems = [
 <header data-testId="header" class="my-5 flex flex-col items-center justify-between lg:flex-row">
 	<Astronav>
 		<div class="flex w-full items-center justify-between lg:w-auto">
-			<Button size={'sm'} name="Download CV">Download CV</Button>
+			<a download href="src/assets/files/StephanieHonoreResume.pdf"><Button size={'sm'} name="Download CV">Download Resumé</Button></a>
 			<div class="block lg:hidden">
 				<MenuIcon class="h-4 w-4 text-black dark:text-white" />
 			</div>
@@ -44,7 +52,7 @@ const menuitems = [
 						</>
 					))
 				}
-				<li><ToggleTheme /></li>
+				<!-- <li><ToggleTheme /></li> -->
 			</ul>
 		</MenuItems>
 	</Astronav>

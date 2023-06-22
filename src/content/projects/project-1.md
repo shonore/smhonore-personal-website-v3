@@ -1,7 +1,7 @@
 ---
 inProgress: false
-title: Project title
-img_alt: project image alt text
-link: https://github.com/veranikabarel?tab=repositories
-tags: ['React', 'CSS', 'Typescript']
+title: Alaska Airlines e-commerce flight search modernization
+img_alt: alaska-airlines
+link: https://alaskaair.com/search
+tags: ['NodeJS', 'CSS', 'Typescript']
 ---
