@@ -1,4 +1,7 @@
 ---
+import { Image } from '@astrojs/image/components';
+import profileImage from '@assets/images/stephanie_profile.png';
+
 ---
 
 <section
@@ -9,24 +12,34 @@
 	<div class="mb-10 flex w-full flex-col items-center justify-center lg:mb-0 lg:w-1/2">
 		<h2 class="font-monospace text-2xl text-black lg:text-4xl">About me</h2>
 		<span class="mb-6 ml-2 h-1 w-10 bg-black"></span>
+		<Image 
+			src={profileImage}
+			alt="Stephanie profile"
+			aspectRatio="4:4"
+			format="png"
+			width={500}
+			height={600}
+			loading="eager"
+		/>
 	</div>
 
-	<div class="w-full text-justify text-black dark:text-white lg:w-1/2">
+	<div class="w-full text-justify text-black lg:w-1/2">
 		<p> 
-			Welcome to my captivating portfolio website! I'm an experienced and highly skilled full-stack software engineer specializing in unleashing the power 
-			of Javascript and .NET web apps and cross-platform mobile apps. With over 7 years of industry experience, I have honed my craft in delivering pragmatic,
-			maintainable, and resilient solutions that scale add impactful value to organizations.
+			👋 Hello! I'm Stephanie Honore, an experienced software engineer with a passion for crafting exceptional user experiences. 
+			With 7+ years of industry experience, I specialize in frontend development using JavaScript and .NET. 
 			<br/>
 			<br/>
-			Drawing upon my solid foundation from my Master's in Computer Science with a specialization in Data Science, 
-			I bring a unique blend of academic knowledge and practical expertise to every project I undertake. 
-			I am fueled by a deep passion for pushing the boundaries of technology, constantly seeking innovative ways
-			to solve complex problems and create exceptional software systems.
+			💡 I thrive on building scalable microservice architectures with Docker and Kubernetes, ensuring robust backends to complement the frontend magic. 
+			Additionally, my Master's degree in Computer Science, with a focus on Data Science, equips me with a data-driven mindset. 
+			Currently, I'm brushing up my machine learning skills using Jupyter Notebooks, Python, PyTorch, SpaCy, and TensorFlow. 
 			<br/>
 			<br/>
-			Beyond coding, I indulge in painting, learning about international security classes at Harvard Extension School, 
-			kayaking, camping, and spending quality time with my dogs Oliver and Indigo . Explore my portfolio to witness my 
-			expertise in action. Let's connect and fuel success together.
+			🏗️ I believe in pragmatic and maintainable solutions that don't overcomplicate things. Quality code that scales without unnecessary 
+			complexity is my mantra. With expertise in Azure, AWS, and GCP, I can leverage cloud platforms to build scalable and reliable solutions. 
+			<br/>
+			<br/>
+			🚀 Beyond software engineering, I'm a cybersecurity enthusiast, staying updated with the latest trends by attending conferences and meetups. When I'm not coding, you'll find me kayaking, 
+			camping, painting, and making music with AI.
 		</p>
 	</div>
 </section>
